@@ -1,13 +1,7 @@
 import React from 'react'
-import {
-    useEffect,
-    useState
-} from 'react';
 
 import Layout from '../Components/Layout';
 import Container from '@mui/material/Container';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
@@ -78,7 +72,7 @@ const Index = () => {
                                     <b>List Request Resep Anda</b>
                                 </Typography>
                                 <Divider sx={{ pt:2 }}/>
-                                
+
                             </Container>
                         </Paper>
                         
