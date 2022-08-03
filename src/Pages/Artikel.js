@@ -13,6 +13,7 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import { Divider } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
 
@@ -72,8 +73,8 @@ const Index = () => {
                                             <Typography variant="body2" color="text.secondary">
                                                 {item.tags}
                                             </Typography>
-                                            <Button sx={{ mt:1 }} variant="contained" size="small" href={`/artikel/detail/${item.key}`}>
-                                                Selengkapnya...
+                                            <Button sx={{ mt:1 }} variant="contained" size="small" >
+                                                <Link to={`/artikel/detail/${item.key}`}><b>Selengkapnya...</b></Link>
                                             </Button>
                                         </CardContent>
                                     </Card>

@@ -119,12 +119,12 @@ const Register = () => {
               </Button>
               <Grid container>
                 <Grid item xs>
-                  <Link href={`/login`} variant="body2">
+                  <Link href={`/login`} variant="body2" className='link'>
                     Login Disini.
                   </Link>
                 </Grid>
                 <Grid item>
-                  <Link href={`/`} variant="body2">
+                  <Link href={`/`} variant="body2" className='link'>
                     Beranda
                   </Link>
                 </Grid>

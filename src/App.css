@@ -56,3 +56,22 @@ body {
 .css-5poeop {
   background-color: #109b68 !important;
 }
+
+
+a {
+  color: #FFF !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+ color: #FFF !important;
+ text-decoration: none !important;
+}
+
+.link {
+  color: rgb(14, 56, 173) !important;
+}
+
+.link:hover {
+  color: red !important;
+}

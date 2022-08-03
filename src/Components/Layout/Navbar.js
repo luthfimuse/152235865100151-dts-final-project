@@ -14,6 +14,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import FastfoodIcon from '@mui/icons-material/Fastfood';
+import { Link } from 'react-router-dom';
 
 const drawerWidth = 240;
 const navItems = [];
@@ -79,23 +80,23 @@ function DrawerAppBar(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             
-            <Button href={`/`} sx={{ color: '#fff', pr:2 }}>
-              Beranda
+            <Link to={`/`} >
+              <Button sx={{ color: '#fff', pr:2 }}>Beranda</Button>
+            </Link>
+            <Link to={`/pencarian`}>
+              <Button sx={{ color: '#fff', pr:2 }}>Pencarian</Button>
+            </Link>
+            <Link to={`/request-resep`}>
+              <Button sx={{ color: '#fff', pr:2 }}>Request Resep</Button>
+            </Link>
+            <Link to={`/artikel`}>
+              <Button sx={{ color: '#fff', pr:2 }}>Artikel</Button>
+            </Link>
+            <Button variant="contained" size="medium" sx={{ ml:3, mr:1 }}>
+               <Link to={`/login`}><b>Login</b></Link>
             </Button>
-            <Button href={`/pencarian`} sx={{ color: '#fff' }}>
-              Pencarian
-            </Button>
-            <Button href={`/request-resep`} sx={{ color: '#fff' }}>
-              Request Resep
-            </Button>
-            <Button href={`/artikel`} sx={{ color: '#fff' }}>
-              Artikel
-            </Button>
-            <Button href={`/login`} variant="contained" size="medium" sx={{ ml:3, mr:1 }}>
-              <b>Login</b>
-            </Button>
-            <Button href={`/register`} variant="contained" size="medium" sx={{ mr:1 }}>
-              <b>Register</b>
+            <Button variant="contained" size="medium" sx={{ mr:1 }}>
+              <Link to={`/register`}><b>Register</b></Link>
             </Button>
 
           </Box>

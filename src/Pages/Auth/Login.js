@@ -99,12 +99,12 @@ const Login = () => {
               </Button>
               <Grid container>
                 <Grid item xs>
-                  <Link href={`/register`} variant="body2">
+                  <Link href={`/register`} variant="body2" className='link'>
                     Belum Punya Akun? Register
                   </Link>
                 </Grid>
                 <Grid item>
-                  <Link href={`/`} variant="body2">
+                  <Link href={`/`} variant="body2" className='link'>
                     Beranda
                   </Link>
                 </Grid>
